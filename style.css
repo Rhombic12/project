@@ -1,0 +1,94 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+ ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav li {
+    display: flex;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/* Style main content */
+main {
+    padding: 20px;
+}
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.artwork {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Style footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Modal (popup) styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.modal-caption {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Make the page responsive for different screen sizes using media queries */
+@media (max-width: 768px) {
+    /* Add your responsive styles here */
+}

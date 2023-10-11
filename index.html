@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Virtual Art Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>Rhombic's Studio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#artwork">Works of Art</a></li>
+                <li><a href="#about">About Rhombic's Studio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Art is not what you see, but what you make others see.</p>
+            <img src="im.jpeg" alt="Artistic Banner">
+        </section>
+        <section id="artwork">
+            <h2>Works of Art</h2>
+            <div class="artwork-grid">
+                <!-- Repeat this block for each artwork -->
+                 <div class="artwork">
+                    <img src="thumbnail1.jpeg" alt="Artwork 1">
+                    <div class="artwork-details">
+                        <h3>Nature</h3>
+                        <p>Many eyes go through the meadow, but few see the flowers in it.</p>
+                    </div>
+                </div>
+                <!-- Repeat for other artworks -->
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Rhombic's Studio</h2>
+            <img src="Rhombic's-photo.jpeg" alt="Artist Photo">
+            <p>A drop of water is as powerful as a thunder-bolt. The best kiss in nature is not between Romeo and Juliet, but it is between a dying autumn leaf and a shiny water drop! Without water drops, there can be no oceans; without steps, there can be no stairs; without little things, there can be no big things!.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Rhombic's Studio</p>
+        <a href="Rhombic's-Studio-link">Rhombic's Studio</a>
+    </footer>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image" alt="Artwork">
+        <div id="modal-caption" class="modal-caption">
+            <h3 id="modal-title">Title of Artwork</h3>
+            <p id="modal-description">Description of Artwork</p>
+        </div>
+    </div>
+</body>
+</html>
